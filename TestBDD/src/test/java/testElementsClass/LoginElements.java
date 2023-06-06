@@ -7,5 +7,8 @@ public class LoginElements {
 	
 	@FindBy(xpath = "//*[contains(@class,'ico-login')]")
 	public WebElement login;
-
+	
+	
+	
+	//*[contains(@class,'ico-login')]
 }
