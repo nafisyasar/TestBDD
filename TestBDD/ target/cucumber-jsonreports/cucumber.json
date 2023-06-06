@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-06T00:32:08.970Z",
+        "line": 2,
+        "name": "User should be able to see login page after clicking login button",
+        "description": "",
+        "id": "login-functionality;user-should-be-able-to-see-login-page-after-clicking-login-button",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testStepDefinitions.LoginStepDefinition.afterChromeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat testActionsClass.LoginActions.getDemoWebShopHomepage(LoginActions.java:22)\n\tat testStepDefinitions.LoginStepDefinition.user_is_on_Demo_Web_Shop_homepage(LoginStepDefinition.java:57)\n\tat ✽.User is on Demo Web Shop homepage(file:///Users/nafisyasar/git/TestBDD/TestBDD/src/test/resources/Features/Login.feature:3)\n",
+              "duration": 24000000,
+              "status": "failed"
+            },
+            "line": 3,
+            "name": "User is on Demo Web Shop homepage",
+            "match": {
+              "location": "testStepDefinitions.LoginStepDefinition.user_is_on_Demo_Web_Shop_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "testStepDefinitions.LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "User should be redirected to login page",
+            "match": {
+              "location": "testStepDefinitions.LoginStepDefinition.user_should_be_redirected_to_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]

@@ -3,9 +3,19 @@ package testRunnerClass;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(plugin = {"pretty", "html: target/cucumberreports", "json: target/cucumber-jsonreports/cucumber.json"}, features = { "src/test/resources/Features " }, glue = {"testStepDefinitions"}, tags = {"@sanity", "@regression"}, monochrome = true)
+@CucumberOptions(
+		
+		features = { "src/test/resources/Features/" },
+		glue = {"testStepDefinitions"}, 
+		plugin = {"pretty", "html: target/cucumberreports", "json: target/cucumber-jsonreports/cucumber.json"}
+		//tags = {}, 
+		//monochrome = true
+		)
 	
 	public class RunnerClass extends AbstractTestNGCucumberTests {
+	
+	
+	
 		
 	
 
