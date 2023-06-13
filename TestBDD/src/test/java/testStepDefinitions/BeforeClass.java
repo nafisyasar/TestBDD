@@ -5,7 +5,7 @@ import io.cucumber.java.Scenario;
 import testUtilities.WebDriverSetup;
 
 public class BeforeClass {
-	@Before("@chrome")
+	@Before()
 	public void beforeChromeScenario(Scenario scen) {
 
 		System.out.println(">> Started Chrome Driver Initialization <<");
