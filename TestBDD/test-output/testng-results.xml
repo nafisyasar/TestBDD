@@ -1,45 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="658" started-at="2023-06-05T20:32:08 EDT" finished-at="2023-06-05T20:32:09 EDT">
+  <suite name="Default suite" duration-ms="21146" started-at="2023-06-13T14:06:00 EDT" finished-at="2023-06-13T14:06:21 EDT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="658" started-at="2023-06-05T20:32:08 EDT" finished-at="2023-06-05T20:32:09 EDT">
+    <test name="Default test" duration-ms="21146" started-at="2023-06-13T14:06:00 EDT" finished-at="2023-06-13T14:06:21 EDT">
       <class name="testRunnerClass.RunnerClass">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="setUpClass" is-config="true" duration-ms="342" started-at="2023-06-05T20:32:08 EDT" finished-at="2023-06-05T20:32:08 EDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="setUpClass" is-config="true" duration-ms="407" started-at="2023-06-13T14:06:00 EDT" finished-at="2023-06-13T14:06:00 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="runScenario" duration-ms="138" started-at="2023-06-05T20:32:08 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-05T20:32:09 EDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="runScenario" duration-ms="15267" started-at="2023-06-13T14:06:00 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-13T14:06:15 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User should be able to see login page after clicking login button"]]>
+                <![CDATA["User should be able to register with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Functionality"]]>
+                <![CDATA["Registration Functionality Test"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at testActionsClass.LoginActions.getDemoWebShopHomepage(LoginActions.java:22)
-at testStepDefinitions.LoginStepDefinition.user_is_on_Demo_Web_Shop_homepage(LoginStepDefinition.java:57)
-at ✽.User is on Demo Web Shop homepage(file:///Users/nafisyasar/git/TestBDD/TestBDD/src/test/resources/Features/Login.feature:3)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="tearDownClass" is-config="true" duration-ms="146" started-at="2023-06-05T20:32:09 EDT" finished-at="2023-06-05T20:32:09 EDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="runScenario" duration-ms="5154" started-at="2023-06-13T14:06:15 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-13T14:06:21 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to register with an email already registered"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Functionality Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunnerClass.RunnerClass@7a30d1e6]" name="tearDownClass" is-config="true" duration-ms="267" started-at="2023-06-13T14:06:21 EDT" finished-at="2023-06-13T14:06:21 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

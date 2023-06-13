@@ -21,4 +21,4 @@ public class WebDriverSetup {
 		driver.quit();
 	}
 
-}
+}// page factory pattern
